@@ -1,41 +1,39 @@
 ---
+users_admin_sudo_password: false
 users:
-  - name: nowshad
-    full_name: Nowshad Ibne Amin
+  - name: amir_m
+    full_name: Amir M
     is_admin: true
     uid: 1001
     groups:
       - 'users'
       - 'ubuntu'
       - 'bin'
-      - 'devs'
+      - 'devops'
     ssh_key:
-      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDvv9z60YR1YE4Z2OsPrpQMlGttU7ZXOeKwPXPEYAkmpa1LHlvR+Bzg2SkmGm6RJiYQn+UWIiHqqASQ/2IcCnE1+JeYny/5Rxn7rkPFAydNc9Me24ssdetLGhOdwhQ6EwuRr3T5jieVQO8lb6bcoXglbblRUN9+oUVg8o2upkex0IFI2uYqzIyQTWMnGENUbV5rbih0fkkT+QAgILhEyv9DR2/Vs2AC7abGIBcDtk3tYTAI332Cd7RbUf2A49FXPdz+RPj+mJGelse1ok9qf3dzWJQ+fckvXuh+e+/RpgV/ldRnfbAxcnqW/ErZZclaMGsiGMay2fhD9YkcQDc66g3C70wtKT2EmILRqNlmtkPGrD14nME+FN5cj4vImYGb5PzMY0jfwAJSbuOEu5WAQFDAsOp7NiHSgc/gPhkQNiuxY6FR+nrS+goQV4iXdq3pdRiP2uf3SVGlZ06txBVeQpv4EexgF+51uH9ppHRX+gnZ59oxpGgBhzIQa7p/yL7feoo95aC6/BEh39jkplfTzJSy6v8VImyyBbo1xyXmXyg4GojfUlq0i2nf9Lk79ffv7xms9NlRK6nrTY9/ROalXeaZokR2seBqVAj0ozDT+RL7d1luW/qgljVfFr+S+kb0XRcBusZzrZS9JLfpahUKxgI7fmn/lsnoAWevJU33XjkV8w== your_email@example.com"
-  - name: george
-    full_name: George Ben
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCiFF5BdNMmYEKtKNFo8xjX6gz1ZURynKHqvwNuLvqXM/uMB8yAQyX4cZ0nNVNvKz8v6UQJ/3MX0k6w3DTOHcoe1UpwqhTtg8xjlcgAfKM3tJwxtegigm/aeLrjfSQ69Loh6v4lazYPApucJ0xQdNCyDY4ABJ4RzRdY8h1vWMFwDbcSdmAeonQOxDKoJDZwIok8Ey5lbPwgbHO3kbgB/+lDqYuwZw/DwygVOkrDKHbOafex/CV/AcssFSoYLrwu3q7TIDnqmwlhtHh5gyCUAscHuVCjtGLCrny033gn8VIxybumAeJp8afEY7YPU8yrUcssTO0uhzQn+01cJJCWnuVo3O9sjtVyCn/d2F0t0FzzEvtQCHJokrvhEImOEMKiJf9Z05Rce7jeShnHFd3KzBG6CnrLkrIHR4a7/g9kRl6PH/ophdgJorYsz6OhdD04NDeL840nEb6KrxXzoZgmwzPCmMaeYg0tuCz8STS9KXOtQ6YyXZflm8H9q6luRumBHw9UOL2qWuwomCNHWJd7qF4YbT3D0LQWczbkKCESYmAqycj/96XjKbuH2gWuQ3vRq6GZUJr1BjOP1hgZGgct/GgDbVaSzuirJjNh3JxXb4KGsRrpA61ccrhpZgCR4xdxaAw/Ld6qNfrvbhPh8JfAvA/sN/2m+aAY1YbAPA9paaGNwQ== amir@idelastico"
+  - name: mohammad_kh
+    full_name: Mohammad Kh
+    is_admin: true
     uid: 1002
     groups:
       - 'users'
       - 'ubuntu'
       - 'bin'
-      - 'devs'
-      - 'ops'
+      - 'devops'
     ssh_key:
-      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDvv9z60YR1YE4Z2OsPrpQMlGttU7ZXOeKwPXPEYAkmpa1LHlvR+Bzg2SkmGm6RJiYQn+UWIiHqqASQ/2IcCnE1+JeYny/5Rxn7rkPFAydNc9Me24ssdetLGhOdwhQ6EwuRr3T5jieVQO8lb6bcoXglbblRUN9+oUVg8o2upkex0IFI2uYqzIyQTWMnGENUbV5rbih0fkkT+QAgILhEyv9DR2/Vs2AC7abGIBcDtk3tYTAI332Cd7RbUf2A49FXPdz+RPj+mJGelse1ok9qf3dzWJQ+fckvXuh+e+/RpgV/ldRnfbAxcnqW/ErZZclaMGsiGMay2fhD9YkcQDc66g3C70wtKT2EmILRqNlmtkPGrD14nME+FN5cj4vImYGb5PzMY0jfwAJSbuOEu5WAQFDAsOp7NiHSgc/gPhkQNiuxY6FR+nrS+goQV4iXdq3pdRiP2uf3SVGlZ06txBVeQpv4EexgF+51uH9ppHRX+gnZ59oxpGgBhzIQa7p/yL7feoo95aC6/BEh39jkplfTzJSy6v8VImyyBbo1xyXmXyg4GojfUlq0i2nf9Lk79ffv7xms9NlRK6nrTY9/ROalXeaZokR2seBqVAj0ozDT+RL7d1luW/qgljVfFr+S+kb0XRcBusZzrZS9JLfpahUKxgI7fmn/lsnoAWevJU33XjkV8w== your_email@example.com"
-  - name: michael
-    full_name: Michael Lieberman
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIXdwjKiP7kO0Ws8KE+gBwvbX2jsbFCPmbvERfnw4Z9f9Ytf8tG8aDOAZlqdXpsoXg/7oWS1Cb4G086W6I3boNv4RSOlblgnLPWwZZUL46vAyZbiMoSdbYQHGCQTAM6rUZ5MXBxjSeDF+RyE+2kFSDtKl/WZwpOX7F/2M6KN77mfDT58LtJtBJ+C43si8bNmV9oZucBxTnHuEoYvVCW2ow+WgWbbwVv6fViZEztaxyHpPd/gIN5SSmyh5W8WKmRg4NVLW12rLb1mro2pWiw5UCxkDh3RJ8QTElJEC9nhcH6BLYLmiYgdqSgG5e72T87V/Fm0C7aVIJEZo+2UKMGv2v Mohammadreza@Mohammads-MacBook-Air.local"
+  - name: mehdi_kh
+    full_name: Mehdi Kh
+    is_admin: true
     uid: 1003
-    group: singer
-    createhome: false
     groups:
       - 'users'
       - 'ubuntu'
       - 'bin'
-      - 'ops'
-    ssh_key: []
+      - 'devops'
+    ssh_key:
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDauLwgLiKUUE1BmYfEC3r3NAQfbyCtcypvP31cuBahDETP271JMF5lOat0IXph+1hBiAJc5b55wMJtZ0e8HzEJvpTEDVs9EPIPlxhv2fLBAGLCVu4jyxOgD1lMCP7wlZOTlzUMf5O+WHYcLfDUzFE358x7xKUTMaaqIuzElSW2mG4HDwZduWw0mb8OUg3OmHKv5FSBDEZI1e/zL4x7cpmPE/TLP4kPjIvHxK/AjZ8nsaZSfWdV8pXJWvdZf1qNyTEGBpAG6Vz6nsXsskENwRwx1q/TKT1xWUUNc4uEUZ6wYIQOf7H6kg944HZIwi6kZOyLubjFJGrHRq3EPQyMPIqYcNc0gqSdH4tK0fKB2p1jc7J3V3wy8cxQg7rlEi90ws4vh2kTmTUCO5RDvJe57OdaTUpZhlX5USCj5wVYeEvbKyJOqeTgQJ8o5MINYB9CFyFwxXzxMNS5CXgxa0WAdWQvbXzAHAoX4tUcHTcYUeYzVfPiscLJ9iphUdaxobrMXlAeL6CDmRmuiKxBmM4y2xOlxZT7llpOj0exfLV0J4yeTwS/viVU/TorIC/3nEUuxGwSMZ0J2lRnUX63KWF3RCsH5tR/Y7viaUB4eJob4A15+pqXI/E/8Ke9xm3ipBzMkODzszd+slxqMF7Y2wT0TDKTpih0KT63qOIYR57DtFNAjw== mehdi_khalilzadeh@yahoo.com"
 users_groups:
-  - name: devs
-    gid: 1003789
-  - name: ops
-    gid: 10104
-
+  - name: devops
+    gid: 10101

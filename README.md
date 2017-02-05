@@ -11,23 +11,22 @@ Configure users, group, SSH keys and administrative sudo access. The role can:
 Requirements
 ------------
 
+Ansible 2.1.2 or above
+
 It will work with:
 * All Ubuntu
 * All Debian
-* All Redhat
 
 Role Variables
 --------------
 
 ### Users management playbook:
 
-ansible-playbook -i hosts playbooks/manage_users.yaml -vvvv
+ansible-playbook playbooks/manage_users.yaml --become --private-key <id-file-path>
 
 ### Users management playbook inventory file:
 
-host
-[test_instance]
-ip of instance where playbook will be deployed
+ip/hostname of instance where playbook will be deployed
 
 * manage_users role
 A list containing dictionaries of configuration. Each list item can have the
@@ -82,7 +81,7 @@ A list of user groups to create. Each list item can have the following elements.
   * gid
 
 #### Example
-  
+
 ```yaml
 users_groups:
   - name: devs
@@ -136,16 +135,6 @@ Make a directory called `callback_plugins` next to your playbook and put `profil
     cd callback_plugins
     wget https://raw.githubusercontent.com/jlafon/ansible-profile/master/callback_plugins/profile_tasks.py
 
-Usage:
-
-Make a directory called `callback_plugins` next to your playbook and put `profile_tasks.py` inside of it.
-
-.. code-block:: bash
-
-    mkdir callback_plugins
-    cd callback_plugins
-    wget https://raw.githubusercontent.com/jlafon/ansible-profile/master/callback_plugins/profile_tasks.py
-
 Now, run your playbook just as you normally would!
 
    ansible <args here>
@@ -164,4 +153,3 @@ Now, run your playbook just as you normally would!
 If for some reason you want to disable this temporarily, set the
 environment variable `ANSIBLE_PROFILE_DISABLE` to any value (even an
 empty string).
-
